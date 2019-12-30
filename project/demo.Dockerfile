@@ -15,7 +15,7 @@ ENV SPRING_PROFILE dev
 RUN apk update && apk add ca-certificates && update-ca-certificates && apk add openssl
 
 # download the latest distribution from lavagna project build servers
-RUN wget "https://github.com/digitalfondue/lavagna/releases/download/lavagna-1.1.2/lavagna-1.1.2-distribution.zip" -O lavagna.zip && \
+RUN wget "https:/4/github.com/digitalfondue/lavagna/releases/download/lavagna-1.1.2/lavagna-1.1.2-distribution.zip" -O lavagna.zip && \
     unzip lavagna.zip && \
     rm lavagna.zip && \
     mv lavagna*/ lavagna/

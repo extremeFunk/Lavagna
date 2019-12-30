@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+    app:
+        container_name: app
+        build:
+            context: .
+            dockerfile: Dockerfile
+        networks:
+            - backend
+        volumes:
+        - lavagna_app:/app/
+        - lavagna_depen:/root/.m2/
+networks:
+    backend:
+volumes:
+    lavagna_app:
+    lavagna_depen:

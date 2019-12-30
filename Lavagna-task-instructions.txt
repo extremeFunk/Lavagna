@@ -1,6 +1,7 @@
 Lavagna
 =======
-(1) Use sources found in project sub-directory. This is based on https://github.com/digitalfondue/lavagna. Read the DOCS!
+(1) Use sources found in project sub-directory. This is based on
+https://github.com/digitalfondue/lavagna. Read the DOCS!
 Note: You may find it easier to read documents on github
 
 (2) Build it using maven
@@ -38,12 +39,16 @@ http://nginx.org/en/docs/http/ngx_http_core_module.html#server
 https://www.keycdn.com/support/nginx-location-directive
 http://nginx.org/en/docs/http/ngx_http_core_module.html#location
 
-(6) Thin docker - create a Dockerfile based on a maven docker image and use multi-stage docker to create an alpine JRE based lavagna image. 
+(6) Thin docker - create a Dockerfile based
+on a maven docker image and use multi-stage
+docker to create an alpine JRE based lavagna image.
     -  Note the difference in size between Step B and Step C
 
-(7) Add another server, running in it's own container, which serves documentation on port 8081. Additional instructions are in the readme.
+(7) Add another server, running in it's own container,
+which serves documentation on port 8081. Additional instructions are in the readme.
 
-At the end of the excercise you should be able to start 4 containers using "docker-compose up":
+At the end of the excercise you should be able to start
+4 containers using "docker-compose up":
 - db
 - java backend
 - nginx frontend
