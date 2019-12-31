@@ -5,10 +5,10 @@ You must provide the following properties:
 - datasource.dialect=HSQLDB | MYSQL | PGSQL
 - datasource.url= for example: jdbc:hsqldb:mem:lavagna | jdbc:mysql://localhost:3306/lavagna | jdbc:postgresql://localhost:5432/lavagna
 - datasource.username=<username>
-- datasource.password=<pwd> 
+- datasource.password=<pwd>
 - spring.profile.active= dev | prod
 
-For example:
+For example:s
 
 >java -Ddatasource.dialect=HSQLDB -Ddatasource.url=jdbc:hsqldb:mem:lavagna -Ddatasource.username=sa -Ddatasource.password= -Dspring.profile.active=dev -jar lavagna-jetty-console.war
 
